@@ -8,10 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Icons\" />
-    <Folder Include="MVVM\Model\" />
+    <None Remove="plus.png" />
+    <None Remove="send-message.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\View\" />
     <Folder Include="Core\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="plus.png" />
+    <Resource Include="send-message.png" />
   </ItemGroup>
 
 </Project>

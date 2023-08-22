@@ -20,3 +20,6 @@ C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\ChatApplication.genruntimeconfig.cache
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\ref\ChatApplication.dll
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\Themes\ContactCard.baml
+C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\App.baml
+C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\Themes\ChatItem.baml
