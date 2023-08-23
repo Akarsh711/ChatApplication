@@ -23,3 +23,4 @@ C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\Themes\ContactCard.baml
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\App.baml
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\Themes\ChatItem.baml
+C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\obj\Debug\net6.0-windows\Themes\MessageBox.baml

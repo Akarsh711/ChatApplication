@@ -84,6 +84,7 @@
                    Margin="8,0,0,0"/>
 
             <ListView ItemsSource="{Binding Contacts}"
+                      SelectedItem="{Binding SelectedContact}"
                       Background="Transparent"
                       Grid.Row="1"
                       ItemContainerStyle="{StaticResource ContactCard}"
