@@ -3,7 +3,9 @@ using ChatApplication.MVVM.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Policy;
 using System.Security.RightsManagement;
 using System.Text;
@@ -19,12 +21,15 @@ namespace ChatApplication.MVVM.ViewModel
 
         /* Commands */
         public RelayCommand SendCommand { get; set; }
+
         private ContactModel _selectedContact;
 
         public ContactModel SelectedContact
         {
             get { return _selectedContact; }
-            set { _selectedContact = value; }
+            set { _selectedContact = value;
+                OnPropertyChanged();
+            }
         }
         
 
@@ -44,7 +49,7 @@ namespace ChatApplication.MVVM.ViewModel
         {
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
-
+            SelectedContact = Contacts;
             SendCommand = new RelayCommand(o =>
             {
                 Messages.Add(new MessageModel
@@ -110,6 +115,8 @@ namespace ChatApplication.MVVM.ViewModel
                     Messages = Messages
                 });
             }
+
+
         }
     }
 }
