@@ -49,7 +49,7 @@ namespace ChatApplication.MVVM.ViewModel
         {
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
-            SelectedContact = Contacts;
+            //SelectedContact = Contacts;
             SendCommand = new RelayCommand(o =>
             {
                 Messages.Add(new MessageModel

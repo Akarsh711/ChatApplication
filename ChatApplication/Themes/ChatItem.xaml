@@ -16,18 +16,18 @@
 
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="{Binding Username}"
+                                <!--<Label Content="{Binding Username}"
                                        Foreground="{Binding UsernameColor}"
                                        VerticalAlignment="Center"
-                                       Margin="0,0,-5,0"/>
+                                       Margin="0,0,-5,0"/>-->
 
                                 <Label Content="{Binding Username}"
-                                       Foreground="#44474D"
+                                       Foreground="White"
                                        FontSize="8"
                                        VerticalAlignment="Center"
                                        Margin="0,0,-5,0"/>
                             </StackPanel>
-                            <Label Content="{Binding Messaage}"
+                            <Label Content="{Binding Message}"
                                    Foreground="White"
                                    FontWeight="SemiBold"
                                    FontSize="8"

@@ -87,7 +87,7 @@
                       SelectedItem="{Binding SelectedContact}"
                       Background="Transparent"
                       Grid.Row="1"
-                      ItemContainerStyle="{StaticResource ContactCard}" SelectionChanged="ListView_SelectionChanged"
+                      ItemContainerStyle="{StaticResource ContactCard}"
                       >
 
             </ListView>
