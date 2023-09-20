@@ -1,5 +1,6 @@
 ﻿using ChatApplication.Core;
 using ChatApplication.MVVM.Model;
+using ChatApplication.MVVM.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,8 +14,26 @@ using System.Threading.Tasks;
 
 namespace ChatApplication.MVVM.ViewModel
 {
+
     internal class MainViewModel : ObservableObject
     {
+        private LoginView LoginView;
+        private ChatView ChatView;
+        // private ChatViewModel ChatView;
+        public RelayCommand LoginViewCommand { get; set; }
+
+        private object _currentView;
+
+        public object CurrentView
+        {
+            get { return _currentView; }
+            set
+            {
+                _currentView = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ObservableCollection<MessageModel> Messages { get; set; }
         public ObservableCollection<ContactModel> Contacts { get; set; }
 
@@ -27,11 +46,13 @@ namespace ChatApplication.MVVM.ViewModel
         public ContactModel SelectedContact
         {
             get { return _selectedContact; }
-            set { _selectedContact = value;
+            set
+            {
+                _selectedContact = value;
                 OnPropertyChanged();
             }
         }
-        
+
 
 
         private string _message;
@@ -45,10 +66,22 @@ namespace ChatApplication.MVVM.ViewModel
                 OnPropertyChanged();
             }
         }
+
+        // ---------------------constructor--------------------
         public MainViewModel()
         {
+            LoginView = new LoginView();
+            ChatView = new ChatView();
+
+            CurrentView = LoginView;
+            LoginViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = ChatView;
+            });
+
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
+
             //SelectedContact = Contacts;
             SendCommand = new RelayCommand(o =>
             {
@@ -106,7 +139,7 @@ namespace ChatApplication.MVVM.ViewModel
                 FirstMessage = true,
             });
 
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Contacts.Add(new ContactModel
                 {
@@ -115,8 +148,6 @@ namespace ChatApplication.MVVM.ViewModel
                     Messages = Messages
                 });
             }
-
-
         }
     }
 }

@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MVVM\View\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="plus.png" />
     <Resource Include="send-message.png" />
   </ItemGroup>

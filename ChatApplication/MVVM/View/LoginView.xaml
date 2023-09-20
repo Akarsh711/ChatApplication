@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="ChatApplication.MVVM.View.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ChatApplication.MVVM.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="959*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid 
+            Grid.Row="0" 
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            >
+
+                <StackPanel Margin="40">
+                    <TextBlock Foreground="White"
+                           FontSize="45"
+                           FontWeight="Bold"
+                           Margin="0 20"
+                           > Log In</TextBlock>
+                    <TextBlock Foreground="white" Margin="0 10 "> Login Id</TextBlock>
+                    <TextBox Height="35"
+                         Background="Black"
+                         Foreground="White"
+                         Padding="0 8 0 0"
+                         >
+                    </TextBox>
+
+                    <TextBlock Foreground="white" Margin="0 10 "> Password</TextBlock>
+                    <Border BorderBrush="{x:Null}" Height="50">
+                        <!--For textbox's text vertical alignment-->
+                        <TextBox
+                        Height="35"
+                        Background="Black"
+                        Foreground="White"
+                        Padding="0 8 0 0"
+                        >
+                        </TextBox>
+
+                    </Border>
+                    <Button 
+                    Content="Login" 
+                    Background="Black"
+                    Foreground="white"
+                    Height="35"
+                    Margin="0 15 "
+                    Command="{Binding LoginViewCommand}"
+                    >
+                    </Button>
+                    <TextBlock> Not have account Sign Up here</TextBlock>
+                    <TextBlock> By click log in you are agreeing to our Terms and conditions</TextBlock>
+                </StackPanel>
+            </Grid>
+            <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="White" TextWrapping="Wrap"> Login is necessary thing you must do to access this application Don't be stupid to try this application without login. Because it is secured by microsoft engineers</TextBlock>
+
+        </Grid>
+    </Grid>
+</UserControl>

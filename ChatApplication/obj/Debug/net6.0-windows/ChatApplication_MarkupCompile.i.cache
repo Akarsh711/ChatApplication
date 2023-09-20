@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\paliw\OneDrive\Desktop\ChatApplication\ChatApplication\App.xaml
-4351067607
+6-1649174462
 
-10-1227428150
+121404242307
 194-1976662911
-MainWindow.xaml;Themes\ChatItem.xaml;Themes\ContactCard.xaml;Themes\MessageBox.xaml;
+MainWindow.xaml;MVVM\View\ChatView.xaml;MVVM\View\LoginView.xaml;Themes\ChatItem.xaml;Themes\ContactCard.xaml;Themes\MessageBox.xaml;
 
 True
 
